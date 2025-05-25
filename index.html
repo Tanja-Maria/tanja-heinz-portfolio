@@ -4,24 +4,123 @@
     <meta charset="UTF-8">
     <title>Tanja Heinz | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
   <body>
+
     <header>
-      <h1>Tanja Heinz</h1>
-      <p>Teacher | Biologist | Web Developer | Photographer</p>
+      <nav class="navbar" id="home">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/migueljpi/compawtible">Project 1</a></li>
-        <li><a href="https://github.com/migueljpi/clone-airbnb">Project 2</a></li>
-      </ul>
-    </section>
+    <div class="profile">
+      <img src="Tanja-Heinz-Foto.jpg" alt="A photo of me" class="photo-tanja"/>
+      <div class="text">
+        <h1>Tanja Heinz</h1>
+        <p>Teacher | Biologist | Web Developer | Photographer</p>
+        <p>
+          <a href="https://github.com/Tanja-Maria" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/tanja-heinz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+        </p>
+      </div>
+    </div>
 
-    <footer>
-      <p>Contact me at heinz.tanjamaria@gmail.com</p>
-    </footer>
+    <div class="content">
+
+      <div id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+
+          <div class="project-card">
+            <a href="https://wildlife-travel.com" target="_blank" rel="noopener noreferrer">
+              <img src="Wildlife-Travel-Screenshot.jpg" alt="Wildlife Travel Project" />
+              <div class="project-info">
+                <h3>Wildlife Travel</h3>
+                <p>Wordpress</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <a href="https://tanjaheinz.com" target="_blank" rel="noopener noreferrer">
+              <img src="Tanja-Heinz-Photography.jpg" alt="Photography Project" />
+              <div class="project-info">
+                <h3>Tanja Heinz Photography</h3>
+                <p>Wordpress</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <a href="https://www.compawtible.me/" target="_blank" rel="noopener noreferrer">
+              <img src="Compawtible.jpg" alt="Bootcamp Project" />
+              <div class="project-info">
+                <h3>Compawtible</h3>
+                <p>Final Bootcamp Project</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div id="skills">
+        <h2>Skills</h2>
+        <div class="skill-icons">
+          <div class="skill">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill">
+            <i class="fas fa-gem"></i>
+            <span>Ruby on Rails</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-wordpress"></i>
+            <span>WordPress</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/xqaqvqbv" method="POST" class="contact-form">
+          <label for="name">Name:</label><br/>
+          <input type="text" id="name" name="name" required /><br/><br/>
+
+          <label for="email">Email:</label><br/>
+          <input type="email" id="email" name="email" required /><br/><br/>
+
+          <label for="message">Message:</label><br/>
+          <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+
+    </div>
+
   </body>
 </html>
