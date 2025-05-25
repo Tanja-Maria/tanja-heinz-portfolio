@@ -1,5 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2;
   margin: 0 auto;
   padding: 2rem;
   background-color: #f7f7f7;
@@ -33,7 +34,7 @@ header {
   text-decoration: underline;
 }
 
-.profile {
+#profile {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -45,7 +46,7 @@ header {
   margin-right: 40px;
 }
 
-.profile .text {
+#profile .text {
   white-space: nowrap;
 }
 
@@ -68,6 +69,11 @@ header {
   margin: 0 40px;
 }
 
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-card:hover {
   transform: scale(1.05);
 }
@@ -78,8 +84,10 @@ header {
   display: block;
 }
 
+
 .project-info {
   padding: 10px;
+  text-decoration: none;
 }
 
 .project-list {
@@ -97,14 +105,14 @@ header {
 
 .skill-icons {
   display: flex;
-  gap: 20px; /* space between each skill */
-  flex-wrap: wrap; /* wrap to next line if needed */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .skill {
   display: flex;
   align-items: center;
-  gap: 8px; /* space between icon and text */
+  gap: 8px;
   font-size: 1.5rem;
   font-weight: 600;
   margin-right: 30px
@@ -114,12 +122,11 @@ header {
   font-size: 2.5rem;
 }
 
-/* Brand colors */
 .skill .fa-html5 { color: #E44D26; }
 .skill .fa-css3-alt { color: #1572B6; }
 .skill .fa-js-square {
   color: #F7DF1E;
-  text-shadow: 1px 1px 0 #000; /* for contrast */
+  text-shadow: 1px 1px 0 #000;
 }
 .skill .fa-gem { color: #CC342D; }
 .skill .fa-wordpress { color: #21759B; }
@@ -138,14 +145,13 @@ header {
 
 .contact-form {
   max-width: 450px;
-  margin: 40px 0 40px 20px; /* top/right/bottom/left: add some left margin */
+  margin: 40px 0 40px 20px;
   padding: 30px 25px;
   background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  text-align: left; /* ensure text is left aligned */
+  text-align: left;
 }
 
 .contact-form label {
@@ -198,4 +204,10 @@ header {
 
 .contact-form textarea {
   min-height: 120px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
